@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            width: 600px;
+            height: 600px;
+
+            /* overflow: hidden; */
+        }
+        .box {
+            width: 240px;
+            height: 240px;
+            float: left;
+            background-color: gray;
+            border: 1px solid white;
+            padding: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+
+    <script>
+        const container = document.querySelector(".container");
+        let size = prompt("Grid size N (for NxN): ");
+        for(let n = 0; n < size**2; n++) {
+            let newBox = document.createElement("div");
+            newBox.className = "box"; 
+            let sideLength = ( Math.floor(600 / size) )  + "px" ; // calculate side length as "12px"
+            console.log(sideLength);
+            newBox.style.width = sideLength;
+            newBox.style.height = sideLength;
+            container.appendChild(newBox);
+        }
+        
+    </script>
+</body>
+</html>
