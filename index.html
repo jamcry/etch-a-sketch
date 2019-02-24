@@ -17,7 +17,7 @@
             height: 240px;
             float: left;
             background-color: gray;
-            border: 1px solid white;
+            box-shadow: inset 0 0 2px #0f0;
             padding: auto;
             margin: auto;
         }
@@ -33,7 +33,8 @@
         for(let n = 0; n < size**2; n++) {
             let newBox = document.createElement("div");
             newBox.className = "box"; 
-            let sideLength = ( Math.floor(600 / size) )  + "px" ; // calculate side length as "12px"
+            newBox.innerHTML = n;
+            let sideLength = ( /*Math.floor*/(600 / size) )  + "px" ; // calculate side length as "12px"
             console.log(sideLength);
             newBox.style.width = sideLength;
             newBox.style.height = sideLength;
