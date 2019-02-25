@@ -1,3 +1,6 @@
+* {
+    font-family: "Overpass Mono", monospace, "Arial";
+}
 .gameCanvas {
     text-align: center;
     margin: auto;
