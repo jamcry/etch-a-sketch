@@ -1,2 +1,2 @@
 # README
-Etch-a-sketch project using vanilla JavaScript.
+Etch-a-sketch game project using vanilla JavaScript.
